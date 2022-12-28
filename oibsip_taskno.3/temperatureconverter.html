@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="yellow" />
+    <meta name="author" content="BADAVATH-RAMKUMAR" />
+    <title>Temperature converter</title>
+    <!-- custom stylesheet link -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="content-container">
+      <h2 id="container-heading">TEMPERATURE CONVERTING MACHINE</h2>
+      <!-- calculation container -->
+      <div id="calculations-container">
+        <!-- Input division -->
+        <div class="content-division">
+          <div class="division-heading">From</div>
+          <div class="inputs-container">
+            <!-- input box -->
+            <input type="number"class="input-field inputs"  name="input"id="input-box"placeholder="ENTER TEMP"  required  />
+            <!-- input dropdown -->
+            <div class="dropdown-container">
+              <select class="dropdown inputs" id="input-dropdown">
+                <option value="Celcius" selected>CELCIUS</option>
+                <option value="Farenheit">FARENHEIT</option>
+                <option value="Kelvin">KELVIN</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- Result division -->
+        <div class="content-division">
+          <div class="division-heading">To</div>
+          <div class="inputs-container">
+            <!-- result box -->
+            <input  type="text"  class="input-field inputs"  name="result"  id="result-box"  placeholder="YOUR OUTPUT"  disabled  />
+            <!-- result dropdown -->
+            <div class="dropdown-container">
+              <select class="dropdown inputs" id="result-dropdown">
+                <option value="Farenheit" selected>CELCIUS</option>
+                <option value="Celcius">FARENHEIT</option>
+                <option value="Kelvin">KELVIN</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- button -->
+        <button id="convert-btn" class="inputs" onclick="converter()">
+          Convert
+        </button>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      ©DEC 28 2022, Made by-
+      <a href="https://www.linkedin.com/in/ram-kumar-8468a7232/" target="_blank">~ BADAVATH RAMKUMAR  </a>
+      <br>
+      Made for <a href="#">Oasis Info Byte community</a>
+    </footer>
+    <!-- custom javascript link -->
+    <script src="./script.js"></script>
+  </body>
+</html>
